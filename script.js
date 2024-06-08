@@ -1,27 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.navbar-brand').addEventListener('click', () => {
-        alert('Welcome to Carddemy!');
-    });
+// JavaScript for making elements clickable and directing to other pages
 
-    document.querySelectorAll('.nav-link').forEach(item => {
-        item.addEventListener('mouseover', () => {
-            item.style.color = 'lightblue';
-        });
-        item.addEventListener('mouseout', () => {
-            item.style.color = '';
-        });
-    });
+// Clickable button
+document.getElementById('clickableButton').addEventListener('click', function() {
+  window.location.href = 'https://example.com';
+});
 
-    document.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            alert('Enter key pressed!');
-        }
-    });
-
-    const playSound = () => {
-        const audio = new Audio('click-sound.mp3');
-        audio.play();
-    };
-
-    document.querySelector('.navbar-toggler').addEventListener('click', playSound);
+// Clickable div
+document.getElementById('clickableDiv').addEventListener('click', function() {
+  window.location.href = 'https://example.com';
 });

@@ -1,95 +1,19 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #1E1E1E;
+.container {
+  padding-bottom: 80px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-.navbar {
-    margin-bottom: 20px;
+.responsive-image {
+  aspect-ratio: 1.54;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
 }
 
-.hero-section {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.hero-overlay {
-    background: linear-gradient(to right, black, transparent);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.hero-title {
-    font-family: 'Montserrat Black', sans-serif;
-    text-align: left;
-}
-
-.hero-caption {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-}
-
-.btn-custom {
-    background: linear-gradient(to right, #B1E5AC, #B4ACD5);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-}
-
-.second-block {
-    background-color: #1E1E1E;
-    padding: 50px 0;
-    position: relative;
-}
-
-.second-block::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('wave-pattern.png'); /* Create or replace with your own wave pattern */
-    opacity: 0.05;
-    z-index: 0;
-}
-
-.second-block-title {
-    color: white;
-    margin-bottom: 40px;
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    background: white;
-    box-shadow: 0 4px 8px rgba(177, 229, 172, 0.5);
-    margin: 0 10px;
-}
-
-.card-title, .card-text {
-    color: #1E1E1E;
-}
-
-.badge-success {
-    background-color: #B1E5AC;
-}
-
-.badge-info {
-    background-color: #B4ACD5;
-}
-
-footer {
-    padding: 10px 0;
+@media (max-width: 991px) {
+  .responsive-image {
+    max-width: 100%;
+  }
 }
