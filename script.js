@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.navbar-brand').addEventListener('click', () => {
-        alert('Welcome to MyWebsite!');
+        alert('Welcome to Carddemy!');
     });
 
     document.querySelectorAll('.nav-link').forEach(item => {
         item.addEventListener('mouseover', () => {
-            item.style.color = 'blue';
+            item.style.color = 'lightblue';
         });
         item.addEventListener('mouseout', () => {
             item.style.color = '';
@@ -16,13 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Enter') {
             alert('Enter key pressed!');
         }
-    });
-
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    carouselItems.forEach(item => {
-        item.addEventListener('slide.bs.carousel', () => {
-            item.classList.add('animated', 'fadeIn');
-        });
     });
 
     const playSound = () => {
