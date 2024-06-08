@@ -16,6 +16,7 @@
     font-size: 22px;
     justify-content: center;
     padding: 25px 60px;
+    height: 50px;
 }
 
 @media (max-width: 991px) {
@@ -28,7 +29,7 @@
 .nav-content {
     display: flex;
     width: 100%;
-    max-width: 1171px;
+    max-width: 1170px;
     gap: 20px;
     justify-content: space-between;
 }
@@ -42,7 +43,7 @@
 
 .nav-logo img {
     aspect-ratio: 1.72;
-    object-fit: auto;
+    object-fit: center;
     object-position: center;
     width: 100px;
     max-width: 100%;
@@ -55,34 +56,61 @@
     margin: auto 0;
 }
 
-@media (max-width: 991px) {
-    .nav-links {
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
+.header {
+    justify-content: space-between; /* Adjust alignment between logo and other elements */
+    background-color: #fff;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Adjust spacing between elements */
+}
+
+.nav-logo {
+    flex: 0 0 auto; /* Ensure logo does not grow or shrink */
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    color: #1e1e1e;
+    margin: auto 0;
 }
 
 .link {
     font-family: Soyuz Grotesk, sans-serif;
+    color: #1e1e1e; /* Change color to desired color */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    font-family: Soyuz Grotesk, sans-serif;
+    color: #8c7ebd;
+    text-decoration: underline; 
 }
 
 .nav-login {
     font-family: Soyuz Grotesk, sans-serif;
     justify-content: center;
-    border-radius: 24px;
+    border-radius: 44px;
     background-color: #b4acd5;
     align-self: start;
-    margin-top: 7px;
+    margin-top: 0px;
     color: #fff;
     white-space: nowrap;
-    padding: 9px 32px;
+    padding: 0px 40px;
 }
 
-@media (max-width: 991px) {
-    .nav-login {
-        white-space: initial;
-        padding: 0 20px;
-    }
+.nav-login:hover {
+    background-color: #8c7ebd; /* Adjust hover background color as needed */
+}
+
+.link {
+    font-family: Soyuz Grotesk, sans-serif;
 }
 
 /* Hero section styles */
@@ -92,7 +120,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    min-height: 830px;
+    min-height: 700px;
     align-items: start;
     color: #b4acd5;
     justify-content: center;
@@ -111,11 +139,12 @@
 
 .hero-image img {
     position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: ;
     object-fit: cover;
     object-position: center;
+    top: 0;
+    left: 0;
 }
 
 .hero-text {
@@ -124,14 +153,17 @@
 
 .primary-text {
     color: rgb(255, 255, 255);
+     line-height: 0;
 }
 
 .highlighted-text {
     color: rgb(177, 229, 172);
+   line-height: 0;
 }
 
 .secondary-text {
     color: rgb(180, 172, 213);
+    line-height: 0;
 }
 
 /* Second section styles */
@@ -140,17 +172,17 @@
     align-items: center;
     background-color: #fff;
     display: flex;
-    padding: 80px 60px;
+    padding: 0px 60px;
 }
 
 @media (max-width: 991px) {
     .container {
-        padding: 0 20px;
+        padding: 0px 0px;
     }
 }
 
 .content-wrapper {
-    margin-top: 51px;
+    margin-top: 0px;
     width: 100%;
     max-width: 1168px;
 }
@@ -163,7 +195,7 @@
 }
 
 .content {
-    gap: 20px;
+    gap: 0px;
     display: flex;
 }
 
@@ -357,6 +389,7 @@
 }
 
 .percent-content {
+margin-top: 20px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -376,7 +409,7 @@
 }
 
 .percent-text {
-    margin-top: 22px;
+    margin-top: 25px;
     color: #1e1e1e;
     font: 500 16px/20px 'Montserrat', sans-serif;
 }
