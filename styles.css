@@ -1,19 +1,133 @@
-.container {
-  padding-bottom: 80px;
+.header {
+  justify-content: flex-end;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  font-weight: 700;
 }
 
-.responsive-image {
-  aspect-ratio: 1.54;
-  object-fit: auto;
-  object-position: center;
+.nav-container {
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
   width: 100%;
+  align-items: center;
+  font-size: 22px;
+  justify-content: center;
+  padding: 25px 60px;
 }
 
 @media (max-width: 991px) {
-  .responsive-image {
+  .nav-container {
     max-width: 100%;
+    padding: 0 20px;
   }
+}
+
+.nav-content {
+  display: flex;
+  width: 100%;
+  max-width: 1171px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .nav-content {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.nav-logo img {
+  aspect-ratio: 1.72;
+  object-fit: auto;
+  object-position: center;
+  width: 100px;
+  max-width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  color: #1e1e1e;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .nav-links {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.link {
+  font-family: Soyuz Grotesk, sans-serif;
+}
+
+.nav-login {
+  font-family: Soyuz Grotesk, sans-serif;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #b4acd5;
+  align-self: start;
+  margin-top: 7px;
+  color: #fff;
+  white-space: nowrap;
+  padding: 9px 32px;
+}
+
+@media (max-width: 991px) {
+  .nav-login {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 830px;
+  align-items: start;
+  color: #b4acd5;
+  justify-content: center;
+  padding: 509px 60px 79px 134px;
+  font: 67px/63px Soyuz Grotesk, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 42px;
+    padding: 40px 20px 0;
+  }
+}
+
+.hero-image img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.primary-text {
+  color: rgb(255, 255, 255);
+}
+
+.highlighted-text {
+  color: rgb(177, 229, 172);
+}
+
+.secondary-text {
+  color: rgb(180, 172, 213);
 }

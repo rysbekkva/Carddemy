@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Production Ready Code</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section class="container">
-    <a href="https://example.com">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1870c36298cf622b4b7e5805dae871d11e9f6063c59e9455a25d2e4ecde68625?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&"
-        alt="Description of image"
-        class="responsive-image"
-      />
-    </a>
-
-    <button id="clickableButton">
-      Clickable Button
-    </button>
-
-    <div id="clickableDiv">
-      Clickable Div
-    </div>
-  </section>
-
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/397d5899feba4f533eae31d33eedd6d6f675c341b5fb07f2ef12b1e0243878d7?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Website Logo">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="how-to-use.html" class="link">как пользоваться?</a>
+          <a href="all-series.html" class="link">все серии</a>
+          <a href="ielts.html" class="link">ielts</a>
+        </div>
+        <div class="nav-login" id="loginButton" tabindex="0" role="button" style="cursor: pointer;">
+          <p><strong>Войти</strong></p>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-image">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/84bae844840f6c47e91631a4bad3a59721299be895c10499771294ef1eb0ba1d?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Optimized Study Time">
+      </div>
+      <div class="hero-text">
+        <p class="primary-text">Оптимизируйте свое учебное время</p>
+        <p class="highlighted-text">в 3 раза</p>
+        <br>
+        <p class="primary-text">с помощью метода обучения через</p>
+        <p class="secondary-text">карточки</p>
+      </div>
+    </section>
+  </header>
   <script src="script.js"></script>
 </body>
 </html>

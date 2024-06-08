@@ -1,8 +1,8 @@
 // JavaScript for making elements clickable and directing to other pages
 
 // Clickable button
-document.getElementById('clickableButton').addEventListener('click', function() {
-  window.location.href = 'https://example.com';
+document.getElementById('loginButton').addEventListener('click', function() {
+  window.location.href = 'https://example.com/login';
 });
 
 // Clickable div
