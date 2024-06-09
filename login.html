@@ -5,289 +5,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carddemy</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .main-header {
-            justify-content: flex-end;
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            font-weight: 700;
-        }
+<style>
+.main-header {
+    justify-content: flex-end;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
 
-        .nav-container {
-            background-color: #fff;
-            z-index: 10;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            font-size: 22px;
-            justify-content: center;
-            padding: 25px 60px;
-            height: 50px;
-        }
+.nav-container {
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 22px;
+    justify-content: center;
+    padding: 25px 60px;
+    height: 50px;
+}
 
-        @media (max-width: 991px) {
-            .nav-container {
-                max-width: 100%;
-                padding: 0 20px;
-            }
-        }
+@media (max-width: 991px) {
+    .nav-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
 
-        .nav-content {
-            display: flex;
-            width: 100%;
-            max-width: 1170px;
-            gap: 20px;
-            justify-content: space-between;
-        }
+.nav-content {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    gap: 20px;
+    justify-content: space-between;
+}
 
-        @media (max-width: 991px) {
-            .nav-content {
-                max-width: 100%;
-                flex-wrap: wrap;
-            }
-        }
+@media (max-width: 991px) {
+    .nav-content {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
 
-        .nav-logo img {
-            aspect-ratio: 1.72;
-            object-fit: center;
-            object-position: center;
-            width: 100px;
-            max-width: 100%;
-        }
+.nav-logo img {
+    aspect-ratio: 1.72;
+    object-fit: center;
+    object-position: center;
+    width: 100px;
+    max-width: 100%;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            color: #1e1e1e;
-            margin: auto 0;
-        }
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: #1e1e1e;
+    margin: auto 0;
+}
 
-        .header {
-            justify-content: space-between;
-            background-color: #fff;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-        }
+.header {
+    justify-content: space-between; /* Adjust alignment between logo and other elements */
+    background-color: #fff;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Adjust padding as needed */
+}
 
-        .nav-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+.nav-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Adjust spacing between elements */
+}
 
-        .nav-logo {
-            flex: 0 0 auto;
-        }
+.nav-logo {
+    flex: 0 0 auto; /* Ensure logo does not grow or shrink */
+}
 
-        .nav-links {
-            display: flex;
-            gap: 40px;
-            color: #1e1e1e;
-            margin: auto 0;
-        }
+.nav-links {
+    display: flex;
+    gap: 40px;
+    color: #1e1e1e;
+    margin: auto 0;
+}
 
-        .link {
-            font-family: Soyuz Grotesk, sans-serif;
-            color: #1e1e1e;
-            text-decoration: none;
-        }
+.link {
+    font-family: Soyuz Grotesk, sans-serif;
+    color: #1e1e1e; /* Change color to desired color */
+    text-decoration: none; /* Remove underline */
+}
 
-        .link:hover {
-            font-family: Soyuz Grotesk, sans-serif;
-            color: #8c7ebd;
-            text-decoration: underline;
-        }
+.link:hover {
+    font-family: Soyuz Grotesk, sans-serif;
+    color: #8c7ebd;
+    text-decoration: underline; 
+}
 
-        .nav-login {
-            font-family: Soyuz Grotesk, sans-serif;
-            justify-content: center;
-            border-radius: 44px;
-            background-color: #b4acd5;
-            align-self: start;
-            margin-top: 0px;
-            color: #fff;
-            white-space: nowrap;
-            padding: 0px 40px;
-        }
+.nav-login {
+    font-family: Soyuz Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: 44px;
+    background-color: #b4acd5;
+    align-self: start;
+    margin-top: 0px;
+    color: #fff;
+    white-space: nowrap;
+    padding: 0px 40px;
+}
 
-        .nav-login:hover {
-            background-color: #8c7ebd;
-        }
+.nav-login:hover {
+    background-color: #8c7ebd; /* Adjust hover background color as needed */
+}
 
-        .link {
-            font-family: Soyuz Grotesk, sans-serif;
-        }
+.link {
+    font-family: Soyuz Grotesk, sans-serif;
+}
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 1004px;
+    width: 100%;
+    align-items: center;
+    font-size: 35px;
+    color: #5e5c5c;
+    font-weight: 400;
+    justify-content: center;
+    padding: 80px 60px;
+  }
+  @media (max-width: 991px) {
+    .main-content {
+      max-width: 100%;
+      padding: 80 20px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .form-container {
+    position: relative;
+    display: flex;
+    width: 800px;
+    max-width: 100%;
+    flex-direction: column;
+    margin: 33px 0 66px;
+  }
+  @media (max-width: 991px) {
+    .form-container {
+      margin-bottom: 40px;
+    }
+  }
+  .form-logo {
+    aspect-ratio: 1.72;
+    object-fit: auto;
+    object-position: center;
+    width: 189px;
+    align-self: center;
+    max-width: 100%;
+  }
+  .form-content {
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 60px 60px;
+  }
+  @media (max-width: 991px) {
+    .form-content {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .form-input {
+    font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+    border-radius: 35px;
+    background: linear-gradient(0deg, #d4d4d4 0%, #d4d4d4 100%);
+    align-items: start;
+    justify-content: center;
+    padding: 44px 52px;
+  }
+  @media (max-width: 991px) {
+    .form-input {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .form-password {
+    font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+    border-radius: 35px;
+    background: linear-gradient(0deg, #d4d4d4 0%, #d4d4d4 100%);
+    margin-top: 23px;
+    align-items: start;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 40px 52px;
+  }
+  @media (max-width: 991px) {
+    .form-password {
+      max-width: 100%;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .form-submit {
+    border-radius: 70px;
+    background-color: #b4acd5;
+    align-self: center;
+    margin-top: 52px;
+    color: #454253;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 30px 60px;
+    font: 700 50px 'Soyuz Grotesk', sans-serif;
+  }
 
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            position: relative;
-            min-height: 1004px;
-            width: 100%;
-            align-items: center;
-            font-size: 35px;
-            color: #5e5c5c;
-            font-weight: 400;
-            justify-content: center;
-            padding: 80px 60px;
-        }
+.form-submit:hover {
+    border-radius: 70px;
+    background-color: #8c7ebd;
+    align-self: center;
+    margin-top: 52px;
+    color: #fff;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 30px 60px;
+    font: 700 50px 'Soyuz Grotesk', sans-serif;
+  }
 
-        @media (max-width: 991px) {
-            .main-content {
-                max-width: 100%;
-                padding: 80px 20px;
-            }
-        }
+  @media (max-width: 991px) {
+    .form-submit {
+      font-size: 40px;
+      margin-top: 20px;
+      white-space: initial;
+      padding: 0 26px 0 20px;
+    }
+  }
+  .register-link {
+    color: #8c7ebd;
+    text-decoration-line: underline;
+    align-self: center;
+    margin-top: 15px;
+    font: 500 23px 'Montserrat', sans-serif;
+  }
+.register-link:hover {
+    color: #454253;
+    text-decoration-line: underline;
+    align-self: center;
+    margin-top: 15px;
+    font: 500 23px 'Montserrat', sans-serif;
+  }
+</style>
 
-        .background-image {
-            position: absolute;
-            inset: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .form-container {
-            position: relative;
-            display: flex;
-            width: 800px;
-            max-width: 100%;
-            flex-direction: column;
-            margin: 33px 0 66px;
-        }
-
-        @media (max-width: 991px) {
-            .form-container {
-                margin-bottom: 40px;
-            }
-        }
-
-        .form-logo {
-            aspect-ratio: 1.72;
-            object-fit: auto;
-            object-position: center;
-            width: 189px;
-            align-self: center;
-            max-width: 100%;
-        }
-
-        .form-content {
-            border-radius: 50px;
-            background-color: #fff;
-            display: flex;
-            margin-top: 20px;
-            flex-direction: column;
-            padding: 60px 60px;
-        }
-
-        @media (max-width: 991px) {
-            .form-content {
-                max-width: 100%;
-                padding: 0 20px;
-            }
-        }
-
-        .form-input {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 25px;
-            border-radius: 35px;
-            background: linear-gradient(0deg, #d4d4d4 0%, #d4d4d4 100%);
-            align-items: start;
-            justify-content: center;
-            padding: 44px 52px;
-        }
-
-        @media (max-width: 991px) {
-            .form-input {
-                max-width: 100%;
-                padding: 0 20px;
-            }
-        }
-
-        .form-password {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 25px;
-            border-radius: 35px;
-            background: linear-gradient(0deg, #d4d4d4 0%, #d4d4d4 100%);
-            margin-top: 23px;
-            align-items: start;
-            white-space: nowrap;
-            justify-content: center;
-            padding: 40px 52px;
-        }
-
-        @media (max-width: 991px) {
-            .form-password {
-                max-width: 100%;
-                white-space: initial;
-                padding: 0 20px;
-            }
-        }
-
-        .form-submit {
-            border-radius: 70px;
-            background-color: #b4acd5;
-            align-self: center;
-            margin-top: 52px;
-            color: #454253;
-            white-space: nowrap;
-            justify-content: center;
-            padding: 30px 60px;
-            font: 700 50px 'Soyuz Grotesk', sans-serif;
-        }
-
-        .form-submit:hover {
-            background-color: #8c7ebd;
-            color: #fff;
-        }
-
-        @media (max-width: 991px) {
-            .form-submit {
-                font-size: 40px;
-                margin-top: 20px;
-                white-space: initial;
-                padding: 0 26px 0 20px;
-            }
-        }
-
-        .register-link {
-            color: #8c7ebd;
-            text-decoration-line: underline;
-            align-self: center;
-            margin-top: 15px;
-            font: 500 23px 'Montserrat', sans-serif;
-        }
-
-        .register-link:hover {
-            color: #454253;
-        }
-    </style>
+</style>
 </head>
 <body>
-    <header class="main-header">
+    <header class="header">
         <nav class="nav-container">
             <div class="nav-content">
                 <div class="nav-logo">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/397d5899feba4f533eae31d33eedd6d6f675c341b5fb07f2ef12b1e0243878d7?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Website Logo">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/397d5899feba4f533eae31d33eedd6d6f675c341b5fb07f2ef12b1e0243878d7?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Website Logo" />
                 </div>
                 <div class="nav-links">
                     <a href="use.html" class="link">как пользоваться?</a>
                     <a href="cards.html" class="link">все серии</a>
                     <a href="ielts.html" class="link">ielts</a>
                 </div>
-                <div class="nav-login" tabindex="0" role="button">
+                <div class="nav-login" tabindex="0" role="button" style="cursor: pointer;">
                     <p>Войти</p>
                 </div>
             </div>
         </nav>
-    </header>
-    <main class="main-content">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/67e6373d43e423b562a86c0cace3112a67f6e25c6ebfc1a238a75451e99e9210?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="" class="background-image" />
-        <div class="form-container">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3826127061bd3a4133a0980b82d060b659c09553c779caf96cef100aa42b132b?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Form Logo" class="form-logo" />
-            <form class="form-content">
-                <input type="text" id="username-input" placeholder="Имя пользователя" class="form-input
+  </header>
+<main class="main-content">
+  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/67e6373d43e423b562a86c0cace3112a67f6e25c6ebfc1a238a75451e99e9210?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="" class="background-image" />
+  <div class="form-container">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3826127061bd3a4133a0980b82d060b659c09553c779caf96cef100aa42b132b?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Form Logo" class="form-logo" />
+    <form class="form-content">
+      
+      <input type="text" id="username-input" placeholder="Имя пользователя" class="form-input" aria-label="Имя пользователя" />
+      
+      <input type="password" id="password-input" placeholder="Пароль" class="form-password" aria-label="Пароль" />
+      <button type="submit" class="form-submit">войти</button>
+      <a href="#" class="register-link">Еще нет аккаунта? Зарегистрируйтесь</a>
+    </form>
+  </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.navbar-brand').addEventListener('click', () => {
+        alert('Welcome to Carddemy!');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = 'lightblue';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.color = '';
+        });
+    });
+
+    document.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            alert('Enter key pressed!');
+        }
+    });
+
+    const playSound = () => {
+        const audio = new Audio('click-sound.mp3');
+        audio.play();
+    };
+
+    document.querySelector('.navbar-toggler').addEventListener('click', playSound);
+});
+
+</script>
+
+</main>
