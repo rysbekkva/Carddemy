@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carddemy</title>
+  <style>
+    .nav-container {
+        background-color: #fff;
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 22px;
+        justify-content: center;
+        padding: 25px 60px;
+        height: 50px;
+    }
+
+    @media (max-width: 991px) {
+        .nav-container {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    .nav-content {
+        display: flex;
+        width: 100%;
+        max-width: 1170px;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 991px) {
+        .nav-content {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .nav-logo img {
+        aspect-ratio: 1.72;
+        object-fit: center;
+        object-position: center;
+        width: 100px;
+        max-width: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        color: #1e1e1e;
+        margin: auto 0;
+    }
+
+    .header {
+        justify-content: space-between; /* Adjust alignment between logo and other elements */
+        background-color: #fff;
+        display: flex;
+        align-items: center; /* Center items vertically */
+        padding: 0 20px; /* Adjust padding as needed */
+    }
+
+    .nav-content {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        gap: 20px; /* Adjust spacing between elements */
+    }
+
+    .nav-logo {
+        flex: 0 0 auto; /* Ensure logo does not grow or shrink */
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 40px;
+        color: #1e1e1e;
+        margin: auto 0;
+    }
+
+    .link {
+        font-family: Soyuz Grotesk, sans-serif;
+        color: #1e1e1e; /* Change color to desired color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .link:hover {
+        font-family: Soyuz Grotesk, sans-serif;
+        color: #8c7ebd;
+        text-decoration: underline; 
+    }
+
+    .nav-login {
+        font-family: Soyuz Grotesk, sans-serif;
+        justify-content: center;
+        border-radius: 44px;
+        background-color: #b4acd5;
+        align-self: start;
+        margin-top: 0px;
+        color: #fff;
+        white-space: nowrap;
+        padding: 0px 40px;
+    }
+
+    .nav-login:hover {
+        background-color: #8c7ebd; /* Adjust hover background color as needed */
+    }
+
+    .link {
+        font-family: Soyuz Grotesk, sans-serif;
+    }
+    .hero-section {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      min-height: 737px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .gradient-overlay {
+      position: relative;
+      background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, #1e1e1e 100%);
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding-bottom: 0px;
+    }
+
+    .hero-text {
+        position: relative;
+    }
+
+    .text1 {
+        color: rgb(255, 255, 255);
+        line-height: 1;
+        font-family: Soyuz Grotesk, sans-serif;
+        font-size: 70px;
+        position: end;
+        padding: 0px 60px;
+    }
+
+    .hero-heading {
+      margin: 385px 0 27px 124px;
+      color: #fff;
+      font: 67px/94% Soyuz Grotesk, sans-serif;
+    }
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0px;
+      width: 100%;
+      max-width: 1178px;
+      font-size: 50px;
+      color: #454253;
+      line-height: 94%;
+    }
+
+    .content-container {
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        padding: 0px 60px;
+    }
+
+    .content-heading {
+      flex-grow: 1;
+      margin: 0 0;
+      font-family: Soyuz Grotesk, sans-serif;
+    }
+
+    .video-container {
+	justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 654px;
+      margin: 43px 0 0 15px;
+    }
+
+    .secondary-image {
+      width: 188px;
+      margin: -68px 0 0 72px;
+      z-index: 10;
+    }
+
+    .footer-image {
+      width: 100%;
+      margin-top: 185px;
+      max-width: 1131px;
+      align-self: center;
+    }
+
+    @media (max-width: 991px) {
+      .hero-section,
+      .gradient-overlay,
+      .navbar,
+      .navbar-container,
+      .brand,
+      .menu,
+      .hero-heading,
+      .content-section,
+      .content-container,
+      .content-heading,
+      .secondary-image,
+      .footer-image {
+        max-width: 100%;
+      }
+
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .content-section,
+      .image-placeholder,
+      .content-container {
+        margin-top: 0px;
+        padding-right: 200px;
+      }
+
+      .content-section,
+      .content-heading {
+        font-size: 40px;
+      }
+    }
+    .courses-container3 {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      padding: 80px;
+      margin-top: 8px;
+      max-width: 100%;
+background: #1e1e1e;
+    }
+
+    @media (max-width: 991px) {
+      .courses-container3 {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+
+    .flex-row3 {
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 991px) {
+      .flex-row3 {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+
+    .category-section {
+      display: flex;
+      flex-grow: 1;
+      align-self: start;
+    }
+
+    .course-category {
+      flex-direction: column;
+    }
+
+    .course-category {
+      flex-direction: column;
+    }
+
+    .category-header {
+      font: 700 20px/24px Montserrat, sans-serif;
+      color: #fff;
+    }
+
+    .course-list {
+      display: flex;
+      margin-top: 23px;
+      flex-direction: row;
+      gap: 70px;
+    }
+
+    .course-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .course-name {
+      font: 200 4px/10px Montserrat, sans-serif;
+      color: #fff;
+    }
+
+    .info-section {
+      display: flex;
+      flex-grow: 1;
+      align-self: start;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-heading {
+      font: 700 20px/25px Montserrat, sans-serif;
+      color: #fff;
+    margin-bottom: 10px;
+    }
+
+    .info-item {
+      font: 300 2px/0px Montserrat, sans-serif;
+      color: #fff;
+
+    }
+
+    .info-list {
+      display: flex;
+      margin-top: 0px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .collaboration-section {
+      display: flex;
+      flex-grow: 1;
+      align-self: start;
+    }
+
+    .collaboration-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collaboration-heading {
+      font: 700 20px/25px Montserrat, sans-serif;
+      color: #fff;
+    margin-bottom: 10px;
+    }
+
+    .collaboration-item {
+      font: 300 2px/0px Montserrat, sans-serif;
+      color: #fff;
+    }
+
+    .collaboration-list {
+      display: flex;
+      margin-top: 0px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .address-section {
+      display: flex;
+      flex-grow: 1;
+      align-self: start;
+    }
+
+    .address-list {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .address-item {
+      font: 300 12px/20px Montserrat, sans-serif;
+      color: #fff;
+    }
+
+    .address-list {
+      display: flex;
+      margin-top: 0px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .question {
+      font: 300 12px/20px Montserrat, sans-serif;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+        <header class="navbar">
+          <nav class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/397d5899feba4f533eae31d33eedd6d6f675c341b5fb07f2ef12b1e0243878d7?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Website Logo" />
+                </div>
+                <div class="nav-links">
+                    <a href="use.html" class="link">как пользоваться?</a>
+                    <a href="card.html" class="link">все серии</a>
+                    <a href="ielts.html" class="link">ielts</a>
+                </div>
+                <div class="nav-login" tabindex="0" role="button" style="cursor: pointer;">
+                    <p>Войти</p>
+                </div>
+            </div>
+        </nav>
+  <section class="hero-section">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b0eba8dcdef0e65aeedb87809daba7faa926f56cb456615447b04468413f0b5?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Hero Background" class="hero-image" />
+    
+      <div class="gradient-overlay">
+         <div class="hero-text">
+             <p class="text1"> Как создать и пользоваться <br> карточками Carddemy? </p>
+            </div>
+        </section>
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="content-heading">Сначала посмотрите это:</h2>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b2b628bdfe59c098504fe82584df576a4de5e57a0663420f2c7c08c2ea6c5ca?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="" class="img-2" />
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="654px" src="https://www.youtube.com/embed/47yVbdReyXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f2f653cac782ca47dba732d4909966423126103c280c8f8871ae1e9c5cef53d4?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="" class="secondary-image" />
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fac563343a4b78362faf9c948483c4561fddd601d49f99d6e4b3b754410d358?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="" class="footer-image" />
+    </section>
+    <section class="courses-container3">
+      <div class="flex-row3">
+        <div class="category-section">
+          <div class="course-category">
+            <h2 class="category-header">Направления</h2>
+            <div class="course-list">
+              <div class="course-item">
+                <h3 class="course-name">Программирование</h3>
+                <h3 class="course-name">Аналитика</h3>
+                <h3 class="course-name">Управление</h3>
+                <h3 class="course-name">Психология</h3>
+                <h3 class="course-name">Английский язык</h3>
+              </div>
+              <div class="course-item">
+                <h3 class="course-name">Дизайн</h3>
+                <h3 class="course-name">Маркетинг</h3>
+                <h3 class="course-name">Финансы</h3>
+                <h3 class="course-name">Инженерия</h3>
+                <h3 class="course-name">Все курсы</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-section">
+          <div class="info-list">
+            <h2 class="info-heading"> Carddemy</h2>
+            <p class="info-item">О нас</p>
+            <p class="info-item">Отзывы</p>
+            <p class="info-item">Контакты</p>
+            <p class="info-item">Вакансии</p>
+            <p class="info-item">О платформе</p>
+            <p class="info-item">Оплата</p>
+          </div>
+        </div>
+        <div class="collaboration-section">
+          <div class="collaboration-list">
+            <h2 class="collaboration-heading">Сотрудничество</h2>
+            <p class="collaboration-item">Скидки для друзей</p>
+            <p class="collaboration-item">Партнёрская программа</p>
+            <p class="collaboration-item">Клиентам </p>
+            <p class="collaboration-item">Работодателям</p>
+            <p class="collaboration-item">Материалы бренда</p>
+            <p class="collaboration-item">Социальные проекты</p>
+          </div>
+        </div>
+        <div class="address-section">
+          <div class="address-list">
+            <address class="address-item">г. Астана, университет Astana IT University, 1 курс, BDA-2302, <br /> проект на сессию по предмету Frontend</address>
+            <p class="address-item">231072@astanait.edu.kz</p>
+            <div class="question">
+              <span>Напишите Амине,если что </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const loginButton = document.querySelector(".nav-login");
+      loginButton.addEventListener("click", function() {
+        window.location.href = "login.html";
+      });
+    });
+  </script>
+</body>
+</html>
