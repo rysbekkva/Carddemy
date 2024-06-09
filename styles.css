@@ -409,7 +409,749 @@ margin-top: 20px;
 }
 
 .percent-text {
-    margin-top: 25px;
+    margin-top: 30px;
     color: #1e1e1e;
     font: 500 16px/20px 'Montserrat', sans-serif;
 }
+  .container {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 0px;
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  .header-text {
+    font-family: Soyuz Grotesk, sans-serif;
+    font-weight: 500;
+    font-size: 81px;
+    color: rgba(69, 66, 83, 1);
+  }
+
+  .sub-header-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+  }
+
+  .section-top {
+    color: #000;
+    letter-spacing: -4.06px;
+    margin-top: 47px;
+    width: auto;
+    align-self: center;
+    max-width: 2000px;
+    font: 52px/55px Inter, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .section-top {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+
+  .responsive-img {
+    aspect-ratio: 2.04;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    margin-top: 25px;
+    max-width: 1168px;
+  }
+
+  @media (max-width: 991px) {
+    .responsive-img {
+      max-width: 100%;
+    }
+  }
+
+  .steps-wrapper {
+    display: flex;
+    margin-top: 56px;
+    width: 100%;
+    max-width: 1146px;
+    gap: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .steps-wrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .step {
+    display: flex;
+    gap: 19px;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  @media (max-width: 991px) {
+    .step {
+      flex-wrap: wrap;
+    }
+  }
+
+  .step-number {
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background-color: #141414;
+    align-self: start;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+    font: 20px Montserrat, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .step-number {
+      white-space: initial;
+    }
+  }
+
+  .step-text {
+    color: #000;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 23px/35px Montserrat, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .step-text {
+      max-width: 100%;
+    }
+  }
+
+  .steps-wrapper-second {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1146px;
+    gap: 30px;
+  }
+
+  @media (max-width: 991px) {
+    .steps-wrapper-second {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .step-second {
+    align-self: start;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  @media (max-width: 991px) {
+    .step-second {
+      flex-wrap: wrap;
+    }
+  }
+
+  .step-number-second {
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background-color: #141414;
+    color: #e0e0e0;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+    font: 20px Montserrat, sans-serif;
+    
+  }
+
+  @media (max-width: 991px) {
+    .step-number-second {
+      white-space: initial;
+    }
+  }
+
+  .step-text-second {
+    color: #000;
+    margin-top: 10px;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 23px/35px Montserrat, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .step-text-second {
+      max-width: 100%;
+    }
+  }
+
+  .step-third {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  @media (max-width: 991px) {
+    .step-third {
+      flex-wrap: wrap;
+    }
+  }
+
+  .step-number-third {
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #141414;
+    align-self: start;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+    font: 20px Inter, sans-serif;
+    text-align: center;
+  }
+
+  @media (max-width: 991px) {
+    .step-number-third {
+      white-space: initial;
+    }
+  }
+
+  .step-text-third {
+    color: #000;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 23px/35px Montserrat, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .step-text-third {
+      max-width: 100%;
+    }
+  }
+
+.container2 {
+  background-color: #1e1e1e;
+  color: #1e1e1e;
+  padding: 20px;
+  /* Add other styles as needed */
+}
+.header1-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header1-title {
+  font-family: Soyuz Grotesk, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #ffffff; /* Header text color */
+}
+
+/* Card container styles */
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 20px;
+  -webkit-scrollbar {
+  display: none;
+  /* Hides scrollbar for Chrome, Safari, and Opera */
+}
+
+.card-container {
+  flex: 0 0 auto;
+  width: 400px; /* Fixed width for each card */
+  height: 200px;
+  
+  border-radius: 20px;
+  
+  color: #1e1e1e; /* Text color for card content */
+}
+
+.card-content {
+  display: flex;
+  gap: 0px;
+  align-items: left;
+  justify-content: space-between
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -130px;
+  font-size: 14px;
+}
+
+.semester,
+.course-title,
+.cards-count {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin: 0px; /* Reset margin to ensure consistent spacing */
+}
+
+.semester {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-weight: 400;
+}
+
+.course-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 30px; /* Adjust margin for spacing */
+}
+
+.cards-count {
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.image-column {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.course-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.course-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover
+  border-radius: 20px;
+}
+  border-radius: 20px;
+}
+
+/* Individual card styles */
+.card-green {
+  background-color: #a3ff8e;
+}
+
+.card-blue {
+  background-color: #a1c8ff;
+}
+
+.card-orange {
+  background-color: #ffb66d;
+}
+
+.card-purple {
+  background-color: #d8a1ff;
+}
+
+.card-yellow {
+  background-color: #f2f087;
+}
+
+.card-pink {
+  background-color: #ffafd8;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+    font-family: Soyuz Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: 44px;
+    background-color: #ffffff;
+    align-self: start;
+    margin-top: 0px;
+    color: #1e1e1e;
+    white-space: nowrap;
+    padding: 20px 40px;
+}
+
+.button:hover {
+    background-color: #8c7ebd; 
+    color: #fff;
+}
+.container3 {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+}
+
+.centered-section3 {
+  background-color: #1e1e1e;
+  display: center;
+  width: 1800px;
+  align-items: center;
+  justify-content: center;
+  padding: 73px 300px;
+}
+
+@media (max-width: 991px) {
+  .centered-section3 {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+.flex-column3 {
+  display: flex;
+  width: 100%;
+  max-width: 1168px;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .flex-column3 {
+    max-width: 100%;
+  }
+}
+
+.white-box3 {
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+@media (max-width: 991px) {
+  .white-box3 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.flex-gap3 {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .flex-gap3 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.half-width-column3 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .half-width-column3 {
+    width: 100%;
+  }
+}
+
+.info-text3 {
+  display: flex;
+  margin-top: 7px;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .info-text3 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.header-text3 {
+  font: 700 31px/36px Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .header-text3 {
+    max-width: 100%;
+  }
+}
+
+.subheader-text3 {
+  margin-top: 30px;
+  font: 500 16px/22px Montserrat, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .subheader-text3 {
+    max-width: 100%;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .form-container {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.input-field {
+  font-family: Montserrat, sans-serif;
+  border-radius: 10px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  background-color: #f5f5f5;
+  align-items: start;
+  white-space: nowrap;
+  line-height: 162.5%;
+  justify-content: center;
+  padding: 22px 20px;
+}
+
+@media (max-width: 991px) {
+  .input-field {
+    max-width: 100%;
+    white-space: initial;
+  }
+}
+
+.input-group {
+  display: flex;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+@media (max-width: 991px) {
+  .input-group {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.input-subfield {
+  font-family: Montserrat, sans-serif;
+  border-radius: 10px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  background-color: #f5f5f5;
+  align-items: start;
+  line-height: 100%;
+  justify-content: center;
+  flex-grow: 1;
+  width: fit-content;
+  margin-right: auto;
+  padding: 20px 20px;
+}
+
+@media (max-width: 991px) {
+  .input-subfield {
+    white-space: initial;
+  }
+}
+
+.submit-button3 {
+  justify-content: center;
+  border-radius: 44px;
+  background-color: #b4acd5;
+  align-self: start;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  margin: 20px 0 0px;
+  padding: 20px 31px;
+}
+
+.courses-container3 {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 80px;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .courses-container3 {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+.flex-row3 {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .flex-row3 {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.category-section {
+  display: flex;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.course-category {
+  flex-direction: column;
+}
+
+.course-category {
+  flex-direction: column;
+}
+
+.category-header {
+  font: 700 20px/24px Montserrat, sans-serif;
+  color: #fff;
+}
+
+.course-list {
+  display: flex;
+  margin-top: 23px;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.course-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-name {
+  font: 200 4px/10px Montserrat, sans-serif;
+  color: #fff;
+}
+
+.info-section {
+  display: flex;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-heading {
+  font: 700 20px/25px Montserrat, sans-serif;
+  color: #fff;
+margin-bottom: 10px;
+}
+
+.info-item {
+  font: 300 2px/0px Montserrat, sans-serif;
+  color: #fff;
+  
+}
+
+.info-list {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.collaboration-section {
+  display: flex;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.collaboration-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.collaboration-heading {
+  font: 700 20px/25px Montserrat, sans-serif;
+  color: #fff;
+margin-bottom: 10px;
+}
+
+.collaboration-item {
+  font: 300 2px/0px Montserrat, sans-serif;
+  color: #fff;
+}
+
+.collaboration-list {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.address-section {
+  display: flex;
+  flex-grow: 1;
+  align-self: start;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.address-item {
+  font: 400 14px/16px Montserrat, sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.question {
+  display: flex;
+  font: 700 18px/16px Montserrat, sans-serif;
+  color: #fff;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
