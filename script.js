@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const playSound = () => {
-        const audio = new Audio('click-sound.mp3');
+        const audio = new Audio('click.wav');
         audio.play();
     };
 
