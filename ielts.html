@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+<style>
+.content-wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  min-height: 951px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+.cover-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header {
+    justify-content: flex-end;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.nav-container {
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 22px;
+    justify-content: center;
+    padding: 25px 60px;
+    height: 50px;
+}
+
+@media (max-width: 991px) {
+    .nav-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.nav-content {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .nav-content {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-logo img {
+    aspect-ratio: 1.72;
+    object-fit: center;
+    object-position: center;
+    width: 100px;
+    max-width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    color: #1e1e1e;
+    margin: auto 0;
+}
+
+.header {
+    justify-content: space-between; /* Adjust alignment between logo and other elements */
+    background-color: #fff;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Adjust spacing between elements */
+}
+
+.nav-logo {
+    flex: 0 0 auto; /* Ensure logo does not grow or shrink */
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    color: #1e1e1e;
+    margin: auto 0;
+}
+
+.link {
+    font-family: Soyuz Grotesk, sans-serif;
+    color: #1e1e1e; /* Change color to desired color */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    font-family: Soyuz Grotesk, sans-serif;
+    color: #8c7ebd;
+    text-decoration: underline; 
+}
+
+.nav-login {
+    font-family: Soyuz Grotesk, sans-serif;
+    justify-content: center;
+    border-radius: 44px;
+    background-color: #b4acd5;
+    align-self: start;
+    margin-top: 0px;
+    color: #fff;
+    white-space: nowrap;
+    padding: 20px 40px;
+}
+
+.nav-login:hover {
+    background-color: #8c7ebd; /* Adjust hover background color as needed */
+}
+
+.link {
+    font-family: Soyuz Grotesk, sans-serif;
+}
+.main-content {
+  position: relative;
+  display: flex;
+  width: 774px;
+  max-width: 100%;
+  flex-direction: column;
+  font-size: 30px;
+  color: #fff;
+  line-height: 321%;
+  margin: 277px 0 16px 125px;
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    margin-top: 40px;
+  }
+}
+
+.cards-count {
+  font-family: Montserrat, sans-serif;
+  border-radius: 41px;
+  background-color: #b4acd5;
+  color: #454253;
+  font-weight: 600;
+  justify-content: center;
+  padding: 28px 24px;
+}
+
+@media (max-width: 991px) {
+  .cards-count {
+    padding-left: 20px;
+  }
+}
+
+.course-title {
+  margin-top: 13px;
+  font: 103px/96px Soyuz Grotesk, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .course-title {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 41px;
+  }
+}
+
+.course-subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+@media (max-width: 991px) {
+  .course-subtitle {
+    max-width: 100%;
+  }
+}
+
+.participate-button {
+  border-radius: 70px;
+  background-color: #b1e5ac;
+  color: #465c44;
+  white-space: nowrap;
+  padding: 32px 39px 17px;
+  font: 52px Soyuz Grotesk, sans-serif;
+  margin-top: 32px;
+}
+
+@media (max-width: 991px) {
+  .participate-button {
+    font-size: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+</style>
+  <title>Carddemy</title>
+</head>
+<body>
+  <section class="content-wrapper">
+    <div class="image-container">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/82bdbcf011bcb1afbc542a225844b2ab2cae22cbef5d98a5d00b5c2a9a1ba76c?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&"
+        class="cover-image"
+        alt=""
+      />
+      <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+<a href="index.html">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/397d5899feba4f533eae31d33eedd6d6f675c341b5fb07f2ef12b1e0243878d7?apiKey=a2c14b6cd1af4688a9c510bbfb516dbd&" alt="Website Logo" /></a>
+                </div>
+                <div class="nav-links">
+                    <a href="use.html" class="link">как пользоваться?</a>
+                    <a href="cards.html" class="link">все серии</a>
+                    <a href="ielts.html" class="link">ielts</a>
+                </div>
+                <div class="nav-login" tabindex="0" role="button" style="cursor: pointer;" href="login.html" class="link">
+                    <a>Войти</a>
+                </div>
+            </div>
+        </nav>
+      <section class="main-content">
+        <div class="cards-count">800 карточек</div>
+        <h1 class="course-title">ielts vocabulary in 30 days!</h1>
+        <p class="course-subtitle">Авторская программа</p>
+        <button class="participate-button" tabindex="0">Участвовать</button>
+      </section>
+    </div>
+  </section>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+    // Add interactivity to nav links
+    document.querySelectorAll('.link').forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = 'light-purple';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.color = '';
+        });
+    });
+
+    // Add click event listeners to buttons
+    const buttons = document.querySelectorAll('.select-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert(`You selected the ${this.parentElement.querySelector('.card-title').innerText} plan`);
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    // Load the click sound
+    const clickSound = new Audio('click.wav');
+</script>
+</body>
+</html>
