@@ -261,8 +261,7 @@
       <div class="cards-count">800 карточек</div>
       <h1 class="course-title">ielts vocabulary in 30 days!</h1>
       <p class="course-subtitle">Авторская программа</p>
-      <button a href="quiz.html" class="participate-button" tabindex="0">Квиз</button>
-    </section>
+       <a href="quiz.html" class="participate-button" tabindex="0">Пройти квиз</a></section>
     </div>
   </section>
   <script>document.addEventListener('DOMContentLoaded', () => {
@@ -287,6 +286,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Load the click sound
     const clickSound = new Audio('click.wav');
+ const quizButton = document.getElementById('quiz-button');
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'quiz.html';
 </script>
 </body>
 </html>
