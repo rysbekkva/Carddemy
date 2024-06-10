@@ -251,8 +251,9 @@
                     <a href="cards.html" class="link">все серии</a>
                     <a href="ielts.html" class="link">ielts</a>
                 </div>
-                <div class="nav-login" tabindex="0" role="button" style="cursor: pointer;" href="login.html" class="link">
-                    <a>Войти</a>
+                <div class="nav-login" tabindex="0" role="button" style="cursor: pointer;" onclick="window.location.href='login.html';">
+                    <p>Войти</p>
+                </div>
                 </div>
             </div>
         </nav>
@@ -260,7 +261,7 @@
         <div class="cards-count">800 карточек</div>
         <h1 class="course-title">ielts vocabulary in 30 days!</h1>
         <p class="course-subtitle">Авторская программа</p>
-        <button class="participate-button" tabindex="0">Участвовать</button>
+        <button class="participate-button" tabindex="0">Пройти квиз</button>
       </section>
     </div>
   </section>
@@ -286,6 +287,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Load the click sound
     const clickSound = new Audio('click.wav');
+const quizButton = document.getElementById('quiz-button');
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'quiz.html';
 </script>
 </body>
 </html>
